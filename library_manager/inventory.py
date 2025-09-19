@@ -45,6 +45,6 @@ class LibraryInventory:
                 books = [Book(**data) for data in books_data]
             logging.info("Books loaded successfully.")
             return books
-        except (json.JSONDecodedError, IOError) as e:
+        except (json.JSONDecodeError, IOError) as e:
             logging.error(f"Error loading books: {e}")
             return []
