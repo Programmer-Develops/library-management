@@ -4,7 +4,7 @@ from pathlib import Path
 import logging
 
 class LibraryInventory:
-    def __init__(self, filename = "book.json"):
+    def __init__(self, filename = "books.json"):
         self.filename = Path(filename)
         self.books = self.load_books()
     
