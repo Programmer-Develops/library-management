@@ -1,5 +1,3 @@
-# cli/main.py
-
 from library_manager.book import Book
 from library_manager.inventory import LibraryInventory
 import logging
