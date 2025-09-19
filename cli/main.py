@@ -29,6 +29,7 @@ def main_menu():
         elif choice == '2':
             isbn = input("Enter ISBN of the book to issue: ")
             found_books = inventory.search_by_isbn(isbn)
+            print(f"Search result: {found_books}")
             if found_books and found_books[0].issue():
                 print("Book issued successfully.")
             else:

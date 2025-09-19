@@ -17,14 +17,14 @@ class Book:
         }
     
     def issue(self):
-        if not self.is_available():
-            self.status = 'issued'
+        if self.is_available():
+            self.status = "issued"
             return True
         return False
     
     def return_book(self):
-        if self.is_available():
-            self.status = 'available'
+        if not self.is_available():
+            self.status = "available"
             return True
         return False
     
