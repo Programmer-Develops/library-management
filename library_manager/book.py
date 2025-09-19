@@ -6,7 +6,7 @@ class Book:
         self.status = status  # can be 'available' or 'borrowed'
     
     def __str__(self):
-        return f'"{self.title}" by {self.author} (ISBN: {self.isbn}) - Status: {self.status}'
+        return f'"\n{self.title}" by {self.author} (ISBN: {self.isbn}) - Status: {self.status}\n'
     
     def to_dict(self):
         return {
